@@ -2,6 +2,7 @@ const discount = 0.2;
 
 const applySale = () => {
   $('.on-sale').each((i, fishCard) => {
+    // looping through the indexes (each index represents a fish card) with the class of on-sale
     const basePriceElement = $(fishCard).find('.price');
     const basePrice = basePriceElement.html() * 1;
     // this will come back as text so have to add * 1
